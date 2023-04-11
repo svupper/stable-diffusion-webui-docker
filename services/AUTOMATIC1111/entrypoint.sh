@@ -61,6 +61,7 @@ done
 
 if [ -f "/data/config/auto/startup.sh" ]; then
   pushd ${ROOT}
+  echo 'executed startup.sh'
   . /data/config/auto/startup.sh
   popd
 fi
